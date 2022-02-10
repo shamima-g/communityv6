@@ -1,0 +1,85 @@
+{
+  "Properties": [
+    {
+      "Id": "File path",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextFileHandle, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "J54H",
+                  "Name": "customersFilePath",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Destination codepage",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextCodepage, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.ExistOptions, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "OverwriteFile"
+    },
+    {
+      "Id": "File does not exist",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.DoesNotExistOptions, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "CreateFile"
+    },
+    {
+      "Id": "Contents",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={1} + {0}",
+        "References": [
+          "System:NewLine",
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "RJhh",
+              "Name": "HeaderLine",
+              "Type": "Compiled:String",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={1}+{0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:String"
+}

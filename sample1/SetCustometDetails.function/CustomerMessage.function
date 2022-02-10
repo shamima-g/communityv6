@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "=\"The customer \" + {0} + \" has the following tags: \" ",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "ofq7",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "W9Xg",
+                  "Name": "fullName",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "=\"The customer \"+{0}+\" has the following tags: \""
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:String"
+}

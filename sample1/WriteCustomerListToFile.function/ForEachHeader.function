@@ -1,0 +1,40 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Compiled:String",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "teUq",
+              "Name": "ListOfHeaders",
+              "Type": "List:Compiled:String",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

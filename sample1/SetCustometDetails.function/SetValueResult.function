@@ -1,7 +1,7 @@
 {
   "Properties": [
     {
-      "Id": "List",
+      "Id": "Source",
       "Type": "List:Custom:x2x0",
       "ValueUsage": "RuntimeRead",
       "Value": {
@@ -10,8 +10,8 @@
           {
             "Type": "Reference",
             "Value": {
-              "Id": "ctsE_Result",
-              "Name": "$.Result",
+              "Id": "OvWd",
+              "Name": "ListOfCustomers",
               "Type": "List:Custom:x2x0",
               "Access": "ReadWrite",
               "IsValid": true
@@ -28,25 +28,18 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Value",
-      "Type": "Custom:x2x0",
-      "ValueUsage": "RuntimeRead",
+      "Id": "Target",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeWrite",
       "Value": {
         "ParsedExpression": "={0}",
         "References": [
           {
             "Type": "Reference",
             "Value": {
-              "Id": "YQji",
-              "Name": "TextFileReadCustomerFile.ForEachLine",
-              "Type": "Generated:Nskl",
-              "PropertyPath": [
-                {
-                  "Id": "LineContents",
-                  "Name": "LineContents",
-                  "PropertyOperator": "."
-                }
-              ],
+              "Id": "qxq7_Result",
+              "Name": "$.Result",
+              "Type": "List:Custom:x2x0",
               "Access": "ReadWrite",
               "IsValid": true
             }
@@ -55,7 +48,7 @@
         "ResultType": {
           "Status": "Success",
           "Message": "",
-          "Type": "Generated:Nskl"
+          "Type": "List:Custom:x2x0"
         },
         "CompiledExpression": "={0}"
       },

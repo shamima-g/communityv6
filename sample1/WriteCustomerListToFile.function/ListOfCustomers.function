@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:x2x0",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": "[{\"accountBalance\":-5000,\"birthday\":\"1956-10-01T00:00:00\",\"firstname\":\"Matthew\",\"lastName\":\"Jenkins\"},{\"accountBalance\":3000,\"birthday\":\"1990-02-23T00:00:00\",\"firstname\":\"Stacy\",\"lastName\":\"Johnson\"},{\"accountBalance\":34005,\"birthday\":\"1912-09-04T00:00:00\",\"firstname\":\"Jeffery\",\"lastName\":\"Higgers\"},{\"accountBalance\":-560.55,\"birthday\":\"1921-03-03T00:00:00\",\"firstname\":\"Jacob\",\"lastName\":\"Reeves\"}]",
+      "ValueType": "String"
+    }
+  ],
+  "Result": "List:Custom:x2x0"
+}

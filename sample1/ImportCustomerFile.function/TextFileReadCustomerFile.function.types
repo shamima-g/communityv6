@@ -2,7 +2,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "UNrp",
+      "Id": "g2Lc",
       "Properties": [
         {
           "Id": "LineNumber",
@@ -13,7 +13,7 @@
         {
           "Id": "LineContents",
           "Name": "LineContents",
-          "Type": "Generated:w7Lu",
+          "Type": "Generated:Nskl",
           "Access": "ReadWrite"
         }
       ]
@@ -22,7 +22,7 @@
   {
     "Type": "Generated",
     "Value": {
-      "Id": "w7Lu",
+      "Id": "Nskl",
       "Properties": [
         {
           "Id": "firstname",
@@ -49,8 +49,8 @@
           "Access": "ReadWrite"
         },
         {
-          "Id": "accounbalance",
-          "Name": "accounbalance",
+          "Id": "accounBalance",
+          "Name": "accounBalance",
           "Type": "Compiled:Double",
           "Access": "ReadWrite"
         }

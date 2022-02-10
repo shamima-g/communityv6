@@ -1,0 +1,47 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Compiled:String",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "ofq7",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "List:Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "teSP",
+                  "Name": "tags",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

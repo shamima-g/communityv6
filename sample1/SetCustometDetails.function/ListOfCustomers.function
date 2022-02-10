@@ -1,0 +1,19 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": "[{\"accountBalance\":-5000, \"birthday\":\"1956-10-01T00:00:00\", \"firstname\":\"Matthew\", \"lastName\":\"Jenkins\", \"tags\":[\"Pension\",\"Overdue\"]},{\"accountBalance\":3000, \"birthday\":\"1990-02-23T00:00:00\", \"firstname\":\"Stacy\", \"lastName\":\"Johnson\", \"tags\":[\"Pension\"]},{\"accountBalance\":34005, \"birthday\":\"1912-04-09T00:00:00\", \"firstname\":\"Jeffery\", \"lastName\":\"Higgers\", \"tags\":[\"Pension\"]},{\"accountBalance\":-560.55, \"birthday\":\"1921-03-03T00:00:00\", \"firstname\":\"Jacob\", \"lastName\":\"Reeves\", \"tags\":[\"overdue\"]}]",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:x2x0",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    }
+  ],
+  "Result": "List:Custom:x2x0"
+}

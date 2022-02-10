@@ -1,0 +1,40 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Custom:x2x0",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "OvWd",
+              "Name": "ListOfCustomers",
+              "Type": "List:Custom:x2x0",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Custom:x2x0"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

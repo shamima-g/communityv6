@@ -1,0 +1,38 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": "[]",
+      "ValueType": "String"
+    },
+    {
+      "Id": "Target",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "qxq7_Result",
+              "Name": "$.Result",
+              "Type": "List:Custom:x2x0",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Custom:x2x0"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "Properties": [
+    {
+      "Id": "File path",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextFileHandle, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "5mG2",
+              "Name": "SetCustometDetails",
+              "Type": "List:Custom:x2x0",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Custom:x2x0"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Destination codepage",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextCodepage, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.ExistOptions, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "AppendData"
+    },
+    {
+      "Id": "File does not exist",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.DoesNotExistOptions, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "CreateFile"
+    },
+    {
+      "Id": "Contents",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={6} +\",\" +{5} +\",\"+{4}+\",\" +{3} + \",\"+{2} + \",\"+{1} +{0}",
+        "References": [
+          "System:NewLine",
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "X03n",
+                  "Name": "customerMessage",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:Double",
+              "PropertyPath": [
+                {
+                  "Id": "TGaW",
+                  "Name": "accountBalance",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:DateTime",
+              "PropertyPath": [
+                {
+                  "Id": "GMRT",
+                  "Name": "birthday",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "FVoM",
+                  "Name": "lastName",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "MaLx",
+                  "Name": "firstname",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "dagJ",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "W9Xg",
+                  "Name": "fullName",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={6}+\",\"+{5}+\",\"+{4}+\",\"+{3}+\",\"+{2}+\",\"+{1}+{0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:String"
+}

@@ -1,49 +1,22 @@
 {
   "Properties": [
     {
-      "Id": "List",
-      "Type": "List:Custom:x2x0",
-      "ValueUsage": "RuntimeRead",
+      "Id": "Target",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeWrite",
       "Value": {
         "ParsedExpression": "={0}",
         "References": [
           {
             "Type": "Reference",
             "Value": {
-              "Id": "ctsE_Result",
-              "Name": "$.Result",
-              "Type": "List:Custom:x2x0",
-              "Access": "ReadWrite",
-              "IsValid": true
-            }
-          }
-        ],
-        "ResultType": {
-          "Status": "Success",
-          "Message": "",
-          "Type": "List:Custom:x2x0"
-        },
-        "CompiledExpression": "={0}"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Value",
-      "Type": "Custom:x2x0",
-      "ValueUsage": "RuntimeRead",
-      "Value": {
-        "ParsedExpression": "={0}",
-        "References": [
-          {
-            "Type": "Reference",
-            "Value": {
-              "Id": "YQji",
-              "Name": "TextFileReadCustomerFile.ForEachLine",
-              "Type": "Generated:Nskl",
+              "Id": "ofq7",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:String",
               "PropertyPath": [
                 {
-                  "Id": "LineContents",
-                  "Name": "LineContents",
+                  "Id": "X03n",
+                  "Name": "customerMessage",
                   "PropertyOperator": "."
                 }
               ],
@@ -55,7 +28,34 @@
         "ResultType": {
           "Status": "Success",
           "Message": "",
-          "Type": "Generated:Nskl"
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "bEh5",
+              "Name": "CustomerMessage",
+              "Type": "Compiled:String",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
         },
         "CompiledExpression": "={0}"
       },

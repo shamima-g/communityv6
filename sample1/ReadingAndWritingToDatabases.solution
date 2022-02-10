@@ -14,6 +14,8 @@
   "Items": [
     "ImportCustomersIntoDatabase.function",
     "ImportCustomerFile.function",
-    "customer.type"
+    "customer.type",
+    "WriteCustomerListToFile.function",
+    "SetCustometDetails.function"
   ]
 }

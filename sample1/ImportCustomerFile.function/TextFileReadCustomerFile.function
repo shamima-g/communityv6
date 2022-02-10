@@ -3,7 +3,7 @@
     {
       "PluginId": "ForEachLine",
       "Name": "ForEachLine",
-      "Result": "Generated:UNrp",
+      "Result": "Generated:g2Lc",
       "Order": 0,
       "IterationHint": "ZeroOrMore"
     }
@@ -91,7 +91,7 @@
             "TypeReference": "Compiled:DateTime"
           },
           {
-            "Name": "accounbalance",
+            "Name": "accounBalance",
             "Skip": false,
             "Format": "",
             "Length": 0,
