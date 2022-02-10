@@ -1,0 +1,306 @@
+{
+  "Properties": [
+    {
+      "Id": "Type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Custom:x2x0",
+      "ValueType": "Linx.ValidCustomTypeReference"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"accountBalance\":{\"LinxExpression\":\"[PARSED]\"}, \"age\":{\"LinxExpression\":\"[PARSED]\"}, \"birthday\":{\"LinxExpression\":\"[PARSED]\"}, \"customerMessage\":{\"LinxExpression\":\"[PARSED]\"}, \"firstname\":{\"LinxExpression\":\"[PARSED]\"}, \"lastName\":{\"LinxExpression\":\"[PARSED]\"}, \"isPensioner\":{\"LinxExpression\":\"[PARSED]\"}, \"fullName\":{\"LinxExpression\":\"[PARSED]\"}, \"monthlyFee\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "accountBalance"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:Double",
+                    "PropertyPath": [
+                      {
+                        "Id": "TGaW",
+                        "Name": "accountBalance",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:Double"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "age"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "yCZ4",
+                    "Name": "Age",
+                    "Type": "Compiled:Double",
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:Double"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "birthday"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:DateTime",
+                    "PropertyPath": [
+                      {
+                        "Id": "GMRT",
+                        "Name": "birthday",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:DateTime"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "customerMessage"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:String",
+                    "PropertyPath": [
+                      {
+                        "Id": "X03n",
+                        "Name": "customerMessage",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:String"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "firstname"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:String",
+                    "PropertyPath": [
+                      {
+                        "Id": "MaLx",
+                        "Name": "firstname",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:String"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "lastName"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:String",
+                    "PropertyPath": [
+                      {
+                        "Id": "FVoM",
+                        "Name": "lastName",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:String"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "isPensioner"
+            ],
+            "expression": {
+              "ParsedExpression": "=({0} >=75)",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "yCZ4",
+                    "Name": "Age",
+                    "Type": "Compiled:Double",
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:Boolean"
+              },
+              "CompiledExpression": "=({0}>=75)"
+            }
+          },
+          {
+            "typePath": [
+              "fullName"
+            ],
+            "expression": {
+              "ParsedExpression": "={0}",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:String",
+                    "PropertyPath": [
+                      {
+                        "Id": "W9Xg",
+                        "Name": "fullName",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:String"
+              },
+              "CompiledExpression": "={0}"
+            }
+          },
+          {
+            "typePath": [
+              "monthlyFee"
+            ],
+            "expression": {
+              "ParsedExpression": "=({0} * 0.01).ToDecimal()",
+              "References": [
+                {
+                  "Type": "Reference",
+                  "Value": {
+                    "Id": "3znw",
+                    "Name": "ForEachCustomer.Loop",
+                    "Type": "Compiled:Double",
+                    "PropertyPath": [
+                      {
+                        "Id": "TGaW",
+                        "Name": "accountBalance",
+                        "PropertyOperator": "."
+                      }
+                    ],
+                    "Access": "ReadWrite",
+                    "IsValid": true
+                  }
+                }
+              ],
+              "ResultType": {
+                "Status": "Success",
+                "Message": "",
+                "Type": "Compiled:Decimal"
+              },
+              "CompiledExpression": "=System.Convert.ToDecimal(({0}*0.01))"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ],
+  "Result": "Custom:x2x0"
+}

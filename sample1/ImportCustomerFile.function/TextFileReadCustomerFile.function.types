@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "UNrp",
+      "Properties": [
+        {
+          "Id": "LineNumber",
+          "Name": "LineNumber",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LineContents",
+          "Name": "LineContents",
+          "Type": "Generated:w7Lu",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "w7Lu",
+      "Properties": [
+        {
+          "Id": "firstname",
+          "Name": "firstname",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "lastname",
+          "Name": "lastname",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "fullname",
+          "Name": "fullname",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "birthday",
+          "Name": "birthday",
+          "Type": "Compiled:DateTime",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "accounbalance",
+          "Name": "accounbalance",
+          "Type": "Compiled:Double",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

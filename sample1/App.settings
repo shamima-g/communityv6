@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "J54H",
+    "Name": "customersFilePath",
+    "Type": "Compiled:String",
+    "Value": "C:\\Work\\Linx6\\CommunitySamples\\communityv6\\sample1\\customers.csv"
+  },
+  {
+    "Id": "MQq6",
+    "Name": "dbConnection",
+    "Type": "Compiled:String",
+    "Value": "DRIVER={MySQL ODBC 8.0 Unicode Driver};SERVER=demolinx6db.linx.twenty57.net;PORT=6603;DATABASE=LinxTest;USER=ClientAdmin;PASSWORD=lmCAhGGWfW24tLYfU22wZhY;OPTION=3;"
+  },
+  {
+    "Id": "qxe8",
+    "Name": "archivefolder",
+    "Type": "Compiled:String",
+    "Value": "C:\\Work\\Linx6\\CommunitySamples\\communityv6\\sample1\\Archive"
+  },
+  {
+    "Id": "tVJZ",
+    "Name": "localdrive",
+    "Type": "Compiled:String",
+    "Value": "C:\\Work\\Linx6\\CommunitySamples\\communityv6\\sample1\\"
+  },
+  {
+    "Id": "L3wG",
+    "Name": "serverInfo",
+    "Type": "Compiled:String",
+    "Value": null
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "ctsE_Result",
+              "Name": "$.Result",
+              "Type": "List:Custom:x2x0",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "List:Custom:x2x0"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:x2x0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "YQji",
+              "Name": "TextFileReadCustomerFile.ForEachLine",
+              "Type": "Generated:w7Lu",
+              "PropertyPath": [
+                {
+                  "Id": "LineContents",
+                  "Name": "LineContents",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Generated:w7Lu"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

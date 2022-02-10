@@ -1,0 +1,384 @@
+{
+  "Properties": [
+    {
+      "Id": "Expression7",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:Decimal",
+              "PropertyPath": [
+                {
+                  "Id": "DOjI",
+                  "Name": "monthlyFee",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Decimal"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "W9Xg",
+                  "Name": "fullName",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "ExpressionCount",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 9
+    },
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "MQq6",
+                  "Name": "dbConnection",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Design-time connection type",
+      "Type": "Compiled:System.Nullable`1[[Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc",
+      "ValueType": "Twenty57.Database.ConnectionType, Twenty57.Database, Version=6.6.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Id": "Expression3",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:DateTime",
+              "PropertyPath": [
+                {
+                  "Id": "GMRT",
+                  "Name": "birthday",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:DateTime"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "FVoM",
+                  "Name": "lastName",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression4",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:Int64",
+              "PropertyPath": [
+                {
+                  "Id": "rzwA",
+                  "Name": "age",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Int64"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression6",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:Double",
+              "PropertyPath": [
+                {
+                  "Id": "TGaW",
+                  "Name": "accountBalance",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Double"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Design-time connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "DesignTime",
+      "Value": ""
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "MaLx",
+                  "Name": "firstname",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "INSERT INTO LinxTest.linxCustomers\r\n           (\r\n           Firstname\r\n           ,LastName\r\n           ,FullName\r\n           ,Birthday\r\n           ,Age\r\n           ,IsPensioner\r\n           ,AccountBalance\r\n           ,AccountFee\r\n           ,Tags)\r\n     VALUES\r\n           (\r\n           @{customer.firstname}\r\n           ,@{customer.lastName}\r\n           ,@{customer.fullName}\r\n           ,@{customer.birthday}\r\n           ,@{customer.age}\r\n           ,@{customer.isPensioner}\r\n           ,@{customer.accountBalance}\r\n           ,@{customer.monthlyFee}\r\n           ,@{tagsList}\r\n           );\r\n"
+    },
+    {
+      "Id": "Expression8",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "46cX",
+              "Name": "FormatTags",
+              "Type": "Compiled:String",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Odbc"
+    },
+    {
+      "Id": "Expression5",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "b50N",
+              "Name": "customer",
+              "Type": "Compiled:Boolean",
+              "PropertyPath": [
+                {
+                  "Id": "z56g",
+                  "Name": "isPensioner",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Boolean"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

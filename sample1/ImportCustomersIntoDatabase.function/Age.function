@@ -1,0 +1,76 @@
+{
+  "Properties": [
+    {
+      "Id": "Value",
+      "Type": "Compiled:Double",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={5}.DayOfYear < {4}.DayOfYear ? ({3}.Year - {2}.Year) - 1 : ({1}.Year - {0}.Year)",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "3znw",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:DateTime",
+              "PropertyPath": [
+                {
+                  "Id": "GMRT",
+                  "Name": "birthday",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          "System:CurrentDateTime",
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "3znw",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:DateTime",
+              "PropertyPath": [
+                {
+                  "Id": "GMRT",
+                  "Name": "birthday",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          "System:CurrentDateTime",
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "3znw",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:DateTime",
+              "PropertyPath": [
+                {
+                  "Id": "GMRT",
+                  "Name": "birthday",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          },
+          "System:CurrentDateTime"
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Int32"
+        },
+        "CompiledExpression": "={5}.DayOfYear<{4}.DayOfYear?({3}.Year-{2}.Year)-1:({1}.Year-{0}.Year)"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:Double"
+}

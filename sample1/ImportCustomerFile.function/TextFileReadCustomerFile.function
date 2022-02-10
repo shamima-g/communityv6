@@ -1,0 +1,110 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachLine",
+      "Name": "ForEachLine",
+      "Result": "Generated:UNrp",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "File path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "J54H",
+                  "Name": "customersFilePath",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.TextFileRead.FileReadOptions, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "LineByLine"
+    },
+    {
+      "Id": "Fields",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.TextFileRead.TextFileReaderFields, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "SkipHeaderLines": 1,
+        "SkipFooterLines": 0,
+        "FileFormat": "CommaDelimited",
+        "TextQualifier": "None",
+        "OtherDelimiter": "",
+        "TextFileType": "Delimited",
+        "Delimiter": "Comma",
+        "FieldList": [
+          {
+            "Name": "firstname",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "Name": "lastname",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "Name": "fullname",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "Name": "birthday",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:DateTime"
+          },
+          {
+            "Name": "accounbalance",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:Double"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "Codepage",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextCodepage, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    }
+  ]
+}

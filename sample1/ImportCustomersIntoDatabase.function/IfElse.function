@@ -1,0 +1,108 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "e8Lz",
+      "Name": "overdue",
+      "Result": null,
+      "Order": 1,
+      "IterationHint": "ZeroOrOnce"
+    },
+    {
+      "PluginId": "c2KQ",
+      "Name": "pensioner",
+      "Result": null,
+      "Order": 0,
+      "IterationHint": "ZeroOrOnce"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "Conditions",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Standard.IfElse.Condition, Twenty57.Linx.Plugins.Standard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": [
+        {
+          "ExecutionPathId": "c2KQ",
+          "Name": "pensioner"
+        },
+        {
+          "ExecutionPathId": "e8Lz",
+          "Name": "overdue"
+        }
+      ]
+    },
+    {
+      "Id": "Stop when true",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Expression_1",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0} < 0",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "3znw",
+              "Name": "ForEachCustomer.Loop",
+              "Type": "Compiled:Double",
+              "PropertyPath": [
+                {
+                  "Id": "TGaW",
+                  "Name": "accountBalance",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Boolean"
+        },
+        "CompiledExpression": "={0}<0"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression_0",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0} > 75",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "yCZ4",
+              "Name": "Age",
+              "Type": "Compiled:Double",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Boolean"
+        },
+        "CompiledExpression": "={0}>75"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Show else",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    }
+  ]
+}

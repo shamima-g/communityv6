@@ -1,0 +1,56 @@
+{
+  "Id": "x2x0",
+  "Name": "customer",
+  "Properties": [
+    {
+      "Id": "TGaW",
+      "Name": "accountBalance",
+      "Type": "Compiled:Double"
+    },
+    {
+      "Id": "rzwA",
+      "Name": "age",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "GMRT",
+      "Name": "birthday",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "X03n",
+      "Name": "customerMessage",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "MaLx",
+      "Name": "firstname",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "FVoM",
+      "Name": "lastName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "z56g",
+      "Name": "isPensioner",
+      "Type": "Compiled:Boolean"
+    },
+    {
+      "Id": "W9Xg",
+      "Name": "fullName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "DOjI",
+      "Name": "monthlyFee",
+      "Type": "Compiled:Decimal"
+    },
+    {
+      "Id": "teSP",
+      "Name": "tags",
+      "Type": "List:Compiled:String"
+    }
+  ]
+}

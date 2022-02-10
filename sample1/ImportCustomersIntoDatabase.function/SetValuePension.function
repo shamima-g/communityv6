@@ -1,0 +1,37 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "\"Pensioner\""
+    },
+    {
+      "Id": "Target",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "46cX",
+              "Name": "FormatTags",
+              "Type": "Compiled:String",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

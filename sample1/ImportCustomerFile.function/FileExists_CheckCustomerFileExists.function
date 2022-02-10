@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "Source file path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "J54H",
+                  "Name": "customersFilePath",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "Result": "Compiled:Boolean"
+}

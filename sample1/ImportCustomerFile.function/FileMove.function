@@ -1,0 +1,85 @@
+{
+  "Properties": [
+    {
+      "Id": "Keep file name",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Dest. folder path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "qxe8",
+                  "Name": "archivefolder",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source file path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "J54H",
+                  "Name": "customersFilePath",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:String"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileTransfer.ExistsOption, Twenty57.Linx.Plugins.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "OverwriteFile"
+    }
+  ],
+  "Result": "Compiled:String"
+}

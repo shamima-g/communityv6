@@ -1,0 +1,58 @@
+{
+  "Properties": [
+    {
+      "Id": "Target",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "ParsedExpression": "={0}",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "uSmU",
+              "Name": "RecordCount",
+              "Type": "Compiled:Int64",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Int64"
+        },
+        "CompiledExpression": "={0}"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "={0} + 1",
+        "References": [
+          {
+            "Type": "Reference",
+            "Value": {
+              "Id": "uSmU",
+              "Name": "RecordCount",
+              "Type": "Compiled:Int64",
+              "Access": "ReadWrite",
+              "IsValid": true
+            }
+          }
+        ],
+        "ResultType": {
+          "Status": "Success",
+          "Message": "",
+          "Type": "Compiled:Int64"
+        },
+        "CompiledExpression": "={0}+1"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}
