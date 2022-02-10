@@ -10,10 +10,17 @@
           {
             "Type": "Reference",
             "Value": {
-              "Id": "5mG2",
-              "Name": "SetCustometDetails",
-              "Type": "List:Custom:x2x0",
-              "Access": "ReadWrite",
+              "Id": "$.Settings",
+              "Name": "$.Settings",
+              "Type": "Compiled:String",
+              "PropertyPath": [
+                {
+                  "Id": "J54H",
+                  "Name": "customersFilePath",
+                  "PropertyOperator": "."
+                }
+              ],
+              "Access": "Read",
               "IsValid": true
             }
           }
@@ -21,7 +28,7 @@
         "ResultType": {
           "Status": "Success",
           "Message": "",
-          "Type": "List:Custom:x2x0"
+          "Type": "Compiled:String"
         },
         "CompiledExpression": "={0}"
       },
